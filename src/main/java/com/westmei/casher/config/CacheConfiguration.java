@@ -48,6 +48,18 @@ public class CacheConfiguration {
             createCache(cm, com.westmei.casher.domain.User.class.getName());
             createCache(cm, com.westmei.casher.domain.Authority.class.getName());
             createCache(cm, com.westmei.casher.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.westmei.casher.domain.Region.class.getName());
+            createCache(cm, com.westmei.casher.domain.Country.class.getName());
+            createCache(cm, com.westmei.casher.domain.Location.class.getName());
+            createCache(cm, com.westmei.casher.domain.Department.class.getName());
+            createCache(cm, com.westmei.casher.domain.Department.class.getName() + ".employees");
+            createCache(cm, com.westmei.casher.domain.Task.class.getName());
+            createCache(cm, com.westmei.casher.domain.Task.class.getName() + ".jobs");
+            createCache(cm, com.westmei.casher.domain.Employee.class.getName());
+            createCache(cm, com.westmei.casher.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, com.westmei.casher.domain.Job.class.getName());
+            createCache(cm, com.westmei.casher.domain.Job.class.getName() + ".tasks");
+            createCache(cm, com.westmei.casher.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
